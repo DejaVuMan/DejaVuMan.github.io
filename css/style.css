@@ -234,7 +234,7 @@ ul{
 
 /*-- Both Works--*/
 .footer {
-	background-image: url(images/backlogo.png);
+	background-image: url("images/backlogo.png");
 	background-repeat: no-repeat;
 	background-position: right top;
 	background-size: 320px;
