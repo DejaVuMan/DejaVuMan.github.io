@@ -247,6 +247,10 @@ ul{
 	text-decoration: none;
 }
 
+.footer b{
+	float: left;
+}
+
 .underlineSmall {
 	display: block;
 	height: 3px;
