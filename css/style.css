@@ -247,14 +247,14 @@ ul{
 	text-decoration: none;
 }
 
-.footer b{
-	float: left;
-}
-
 .underlineSmall {
 	display: block;
 	height: 3px;
 	width: 41px;
 	margin: 5px auto 0 auto;
 	background-color: #027BFF;
+}
+
+.footer b{
+	float: left;
 }
