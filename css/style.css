@@ -226,8 +226,48 @@ ul{
 	
 }
 
+
+/*-- Work 3 --*/
+.work3{
+	width:100%;
+	position:relative;
+	margin-bottom: 20em;
+}
+
+.work3 > .worktext{
+	position: absolute;
+	top: 85px;
+}
+
+.work3 > .worktext > .underline {
+	display: block;
+	background-color: #027BFF;
+	height:3px;
+	width:61px;
+	margin-top: 5px;
+}
+
+.work3 > .workImg{
+	width: 85%;
+	float: right;
+	-webkit-box-shadow: 0px 3px 70px  0px rgba(23,30,36,0.06);
+	-moz-box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+	box-shadow: 0px 3px 70px 0px rgba(23,30,36,0.06);
+}
+
+.work3 ul{
+	position: absolute;
+	bottom: 0;
+	right: 86%;
+}
+
+.work3 ul li{
+	margin-top: 20px;
+	
+}
+
 /*-- Both Works--*/
-.work a,.work2 a{
+.work a,.work2 a,.work3 a{
 	text-decoration: none;
 	color: #17191A;
 }
