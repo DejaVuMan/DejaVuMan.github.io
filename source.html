@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alan Szuszkiewicz's Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" 
+        crossorigin="anonymous" /> 
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans
+        +Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/al_dev.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I'm <strong>Alan Szuszkiewicz</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Computer Science Student</p>
+            <img src="img/photo-01.png" alt="Image of me smiling" class="intro__img">
+        </section>
+
+        <!-- My Services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Programming</h3>
+                    <p>Over the past few years, I've continued to build up my programming skills in Python and begun working with C++ as well as Java. I have a strong interest
+                        in data structures, having created a weighted graph with a graphical interface as a capstone project for my Algorithms class. I've done work with Python's
+                        various libraries to succesfully analyze data sets and draw conclusions for potential clients, and even made a 3D rendering engine from scratch which can read .OBJ files.
+                    </p>
+                </div> <!-- Service -->
+
+                <div class="service">
+                    <h3>Creative Writing</h3>
+                    <p>I find myself coming back to creative writing in my freetime quite often. It's a wonderful outlet for stress and worry, where you can escape into your own
+                        hand-crafted universe where the only limit are the depths of your imagination. I've been involved in collaborative writing projects, my own short stories,
+                        poetry, and even writing the script for a retro-styled RPG which has seen success!
+                    </p>
+                </div> <!-- Service -->
+
+                <div class="service">
+                    <h3>IT Specialist</h3>
+                    <p>I've always had a thing for helping others out with computer problems, essentially having been my household's go-to person for all computer-related issues.
+                        Naturally, this time spent working and diagnosing hardware or software lead me to have a strong skillset for all things IT. I've had experience with a 
+                        tax reductant agency answering user inquiries regarding various issues to resolve problems, setting up software or hardware for employee use, performing fixes
+                        on hardware, and upgrading office network infrastructure for better throughput and management. By all means, never use a hammer!
+                    </p>
+                </div> <!-- Service -->
+            </div> <!-- Services -->
+
+
+            <a href="#work" class="btn">see my projects</a>
+        </section>
+
+        <!-- About Me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Student & Programmer based out of Chicago</p>
+
+            <div class="about-me__body">
+                <p>I'm a student who's currently studying abroad at the University of Warmia and Mazury in Olsztyn! Originally from Chicago, Illinois, I find that I've
+                    always been drawn to technology - I remember building my own computer when I was still in elementary school and designing websites with fellow colleagues
+                    for clients in highschool, while working at a tax reduction company's IT position. My natural affinity for technology and programming lead me to be an assistant 
+                    teacher for my computer science class in highschool and gain a strong interest in Python, C++, and Java, from which point I interned with KPMG.
+                </p>
+                <p>When I'm not actively building and improving my programming toolset, I love to produce videos for my personal YouTube channel, write short stories, and am
+                    actively invested in social causes I find important. I had the pleasure of being a Black Lives Matter organizer in Warsaw for a period of time during 2020
+                    and assisted in Casey Smagala's 2019 39th Ward campaign. I always try to give back to my community any way I can and hope that one day I can do just that
+                    for the city which helped shape me into who I am today.
+
+                </p>
+            </div>
+
+            <img src="img/photo-02_wia.png" alt="Temp file" class="about-me__img">
+        </section>
+
+        <!-- My work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Projects</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my work</p>
+
+            <div class="portfolio">
+                <!-- Port Item 1-->
+                <a href="portfolio_item_01.html" class="portfolio__item">
+                    <img src="img/render3d_obj_proj.png" alt="" class="portfolio__img">
+                </a>
+
+                 <!-- Port Item 2-->
+                 <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                </a>
+
+                 <!-- Port Item 3-->
+                 <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <a href="mailto:szuszkiewiczalan928@gmail.com" class="footer__link">szuszkiewiczalan928@gmail.com</a>
+        <ul class="social-list">
+            <li xlass="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/alan-szuszkiewicz-a449b0195/">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a></li>
+            <li xlass="social-list__item"><a class="social-list__link" href="https://github.com/DejaVuMan">
+                <i class="fab fa-github"></i> Github
+            </a></li>
+            <li xlass="social-list__item"><a class="social-list__link" href="https://bitbucket.org/DejaVuMan/workspace/projects/SID">
+                <i class="fab fa-bitbucket"></i> BitBucket
+            </a></li>
+        </ul>  
+        </footer>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
