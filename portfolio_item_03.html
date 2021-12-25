@@ -50,11 +50,12 @@
                 It allows the user to encrypt multiple file types using their own password, which is later passed through a SHA256 and MD5 hash function for the 
                 AES encryption password and initialization vector.
             </p>
-            <img src="img/p3_details.png" alt="Code Snippet which runs on user update for rendering and clearing the screenspace">
+            <img src="img/p3_details_new.png" alt="Code Snippet which runs on user request for encrypting files">
             <p>Initially, it was designed to be only for the Android platform, but the code used is currently cross-platform compatible and capable of deployment on iOS
                 and other platforms as well.
             </p>
-            <p>One of the most pertinent issues I had to overcome was preserving I/O and overall performance when encrypting larger files - One of the most common ways
+            <p>One of the most pertinent issues I had to overcome was preserving I/O and overall performance when encrypting larger files - Outside of ensuring consistent
+                performance with asynchronous execution and tasks, one of the most common ways
                 to encrypt a file is to pass it all in right away to the encryption function and write it immediately to a final file. Unfortunately, while this method is
                 simple to implement, it is extremely inefficient for large files and can bring a mobile device to a grinding halt. The ingenious solution to this is instead
                 to utilize a "chunk" system - create an empty final file and then open a filestream to it, writing encrypted data in numerous blocks of data! Not only is this
