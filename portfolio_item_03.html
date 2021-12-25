@@ -39,27 +39,34 @@
                 <!-- Intro -->
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                A musical festival <strong>Database Project</strong>
+                A cross-platform <strong>File Encryption App</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Made in Microsoft Access</p>
-            <img src="img/access_db_proj3.png" alt="a MS access database project with various linkages, rules, and relationships" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">Made with Xamarin and C#</p>
+            <img src="img/file_enc_proj3.png" alt="a File Encryption app built with Xamarin for full cross-compatibility support on mobile devices." class="intro__img">
         </section>
 
         <div class="portfolio-item-individual">
-            <p> This was a Music Festival Project for Database class at the University of Warmia and Mazury. 
-                It includes multiple tables, query-based functions, forms, and reports, and was even used for my university's music festival in 2020.
+            <p> This is an ongoing project to explore the feasibility and difficulty in creating a file encryption application that is performant and cross-platform. 
+                It allows the user to encrypt multiple file types using their own password, which is later passed through a SHA256 and MD5 hash function for the 
+                AES encryption password and initialization vector.
             </p>
             <img src="img/p3_details.png" alt="Code Snippet which runs on user update for rendering and clearing the screenspace">
-            <p>You can easily search up details of a band, song, or festival location through the main form, as well as input your own band to link to a festival, 
-                and view a table and edit manually if you so choose. This project received one of the highest scores in the class for going above and beyond what 
-                the requirements were.
+            <p>Initially, it was designed to be only for the Android platform, but the code used is currently cross-platform compatible and capable of deployment on iOS
+                and other platforms as well.
             </p>
-            <p>One of the main issues I had to overcome for this was properly creating a One-to-Many relationship in MS Access when there is no easy way to do
-                directly. This was remedied by the usage of a "linking" table between Bands and Festivals where the Band ID and Festival ID were accesses via this
-                table.
+            <p>One of the most pertinent issues I had to overcome was preserving I/O and overall performance when encrypting larger files - One of the most common ways
+                to encrypt a file is to pass it all in right away to the encryption function and write it immediately to a final file. Unfortunately, while this method is
+                simple to implement, it is extremely inefficient for large files and can bring a mobile device to a grinding halt. The ingenious solution to this is instead
+                to utilize a "chunk" system - create an empty final file and then open a filestream to it, writing encrypted data in numerous blocks of data! Not only is this
+                more efficient in memory usage, but it also ensures the operating system has resources for background tasks, improving device performance hugely.
             </p>
-            <p>This project is available for download from 
-                <a href="https://github.com/DejaVuMan/DejaVuMan.github.io/blob/master/Music%20Festival%20Vers%202.accdb">this</a> Github link.</p>
+            <p>Another issue that I had to overcome in this project was making it be cross-compatible across both recent and new Android API levels - with the introduction of
+                Android API 29 (Android 10), many changes were brought about to file storage, one of the main ones being the requirement for "scoped storage" - Android apps can
+                no longer access public file directories directly unless they are folders such as DCIM, Download, etc. To work around this requirement, I created two separate
+                file writing interface functions which ensure full compatability even as far back as API level 21 (Android 5.0)!
+            </p>
+            <p>This project is  still a constant work-in-progress and I hope to add many new features, such as a better UI - it is currently available at this 
+                <a href="https://github.com/DejaVuMan/FileEncApp">this</a> Github link.</p>
         </div>
 
         <!-- footer -->
