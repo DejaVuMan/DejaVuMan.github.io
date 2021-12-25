@@ -64,9 +64,11 @@
             <p>Another issue that I had to overcome in this project was making it be cross-compatible across both recent and new Android API levels - with the introduction of
                 Android API 29 (Android 10), many changes were brought about to file storage, one of the main ones being the requirement for "scoped storage" - Android apps can
                 no longer access public file directories directly unless they are folders such as DCIM, Download, etc. To work around this requirement, I created two separate
-                file writing interface functions which ensure full compatability even as far back as API level 21 (Android 5.0)!
+                file writing interface functions which ensure full compatability even as far back as API level 21 (Android 5.0)! Writing to API 28 and below is still standard
+                game, but API 29 and above will utilize the new scoped storage requirements and comply with saving files to the app's respective sandbox in local storage.
             </p>
-            <p>This project is  still a constant work-in-progress and I hope to add many new features, such as a better UI - it is currently available at this 
+            <img src="img/p3_more_detail.png" alt="Code Snippet for API 28 and below">
+            <p>This project is still a constant work-in-progress and I hope to add many new features, such as a better UI - it is currently available at this 
                 <a href="https://github.com/DejaVuMan/FileEncApp">this</a> Github link.</p>
         </div>
 
