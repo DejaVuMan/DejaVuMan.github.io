@@ -6,6 +6,8 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { Icon } from '@mui/material';
 
+// maybe instead of a unified button with logo on left side, I should expand it out into discrete buttons with on hover effects etc
+
 export default function MenuNav() {
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
