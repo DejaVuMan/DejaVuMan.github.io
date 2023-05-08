@@ -1,23 +1,11 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import  MenuNav  from "../components/MenuNav";
 
 const Layout = () => {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <Outlet />
+        <MenuNav />
+        <Outlet />
     </>
   )
 };
